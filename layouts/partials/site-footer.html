@@ -17,12 +17,10 @@
     <div>{{ partial "social-follow.html" . }}</div>
   </div>
   {{ if .Site.Params.footer_image }}
-  {{ if .Site.Params.footer_link }}
-  <div class="flex justify-between">
+	  {{ if .Site.Params.footer_link }}
                 <a href="{{.Site.Params.footer_link}}">
                 <img src={{.Site.Params.footer_image}} alt="{{.Site.Params.footer_image_alt}}">
                 </a>
-  </div>
-  {{ end }}
+	  {{ end }}
   {{ end }}
 </footer>
