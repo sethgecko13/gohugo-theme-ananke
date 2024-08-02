@@ -2,6 +2,6 @@
 {{ partial "adsense.html" . }}
 {{ end }}
 {{ if .Site.Params.apple_itunes_app_content }}
-    <meta name="apple-itunes-app" content="{{ .Site.Params.apple_itunes_app_content }}">
+{{ partial "apple-itunes.html" . }}
 {{ end }}
 
